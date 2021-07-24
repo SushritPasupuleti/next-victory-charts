@@ -12,6 +12,7 @@ export default function Pie() {
     return (
         <div>
             <V.VictoryPie
+            //   colorScale={["tomato", "orange", "gold", "cyan", "navy" ]}
                 data={data}
                 theme={V.VictoryTheme.material}
             />
