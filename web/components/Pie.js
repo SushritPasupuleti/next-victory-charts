@@ -3,21 +3,16 @@ import ReactDOM from 'react-dom';
 import * as V from 'victory';
 
 const data = [
-    { quarter: 1, earnings: 13000 },
-    { quarter: 2, earnings: 16500 },
-    { quarter: 3, earnings: 14250 },
-    { quarter: 4, earnings: 19000 }
+    { x: "Cats", y: 35 },
+    { x: "Dogs", y: 40 },
+    { x: "Birds", y: 55 }
 ];
 
 export default function Pie() {
     return (
         <div>
-            <V.VictoryBar
+            <V.VictoryPie
                 data={data}
-                // data accessor for x values
-                x="quarter"
-                // data accessor for y values
-                y="earnings"
                 theme={V.VictoryTheme.material}
             />
         </div>
