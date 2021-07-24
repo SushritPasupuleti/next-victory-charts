@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Pie from '../components/Pie'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         Hello There
+        <Pie/>
       </main>
     </div>
   )
