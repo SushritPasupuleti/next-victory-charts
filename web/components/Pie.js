@@ -15,6 +15,8 @@ export default function Pie() {
             //   colorScale={["tomato", "orange", "gold", "cyan", "navy" ]}
                 data={data}
                 theme={V.VictoryTheme.material}
+                animate={{duration: 500}}
+                responsive={true}
             />
         </div>
     )
