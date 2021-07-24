@@ -12,7 +12,7 @@ const data = [
 export default function Pie() {
     return (
         <div>
-            <VictoryBar
+            <V.VictoryBar
                 data={data}
                 // data accessor for x values
                 x="quarter"
