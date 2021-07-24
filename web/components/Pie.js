@@ -11,7 +11,7 @@ const data = [
 export default function Pie() {
     return (
         <div>
-            <svg style={{visibility: 'hidden'}}>
+            <svg style={{visibility: 'hidden', position: 'absolute'}}>
                 <defs>
                     <linearGradient id="gradient1"
                         x1="0%" y1="0%" x2="0%" y2="100%"
@@ -42,7 +42,7 @@ export default function Pie() {
             <V.VictoryPie
                 //   colorScale={["tomato", "orange", "gold", "cyan", "navy" ]}
                 data={data}
-                theme={V.VictoryTheme.material}
+                // theme={V.VictoryTheme.material}
                 animate={{ duration: 500 }}
                 responsive={true}
                 // labels={(datum) => {datum.y / 125}}
