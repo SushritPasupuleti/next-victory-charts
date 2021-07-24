@@ -18,6 +18,7 @@ export default function Pie() {
                 x="quarter"
                 // data accessor for y values
                 y="earnings"
+                theme={V.VictoryTheme.material}
             />
         </div>
     )
